@@ -9,7 +9,7 @@ section#sk {
 	background-color: white;
 }
 .sk-item + .sk-item {
-	margin-top: 30px;
+	margin-top: 25px;
 }
 
 .sk-item > h3 {

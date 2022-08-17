@@ -9,14 +9,13 @@
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	height: max(100px + 20vw, 300px);
 
 	overflow: hidden;
 }
 .prj-img img {
 	flex-shrink: 0;
-	width: auto;
-	height: 100%;
+	width: 100%;
+	height: auto;
 
 	margin: auto;
 }
