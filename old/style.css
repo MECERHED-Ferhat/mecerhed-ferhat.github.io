@@ -1,0 +1,31 @@
+* {
+	outline: none !important;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+:root{
+	--color-blue : rgb(20, 26, 184);
+	--color-lightgray : #e9ecef;
+
+	--minwidth-sm : 500px;
+	--minwidth-md : 800px;
+	--minwidth-lg : 1200px;
+}
+
+
+
+
+@media only screen and (min-width: 500px) {
+	.container {max-width: var(--minwidth-sm);}
+	@media only screen and (min-width: 800px) {
+		.container {max-width: var(--minwidth-md);}
+		@media only screen and (min-width: 1200px) {
+			.container {max-width: var(--minwidth-lg);}
+		}
+	}
+}

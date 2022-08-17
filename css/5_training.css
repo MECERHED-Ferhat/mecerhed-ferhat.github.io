@@ -1,0 +1,56 @@
+#trn-graph {
+	position: relative;
+	font-size: var(--font-xs);
+
+	overflow: hidden;
+}
+
+#trn-graph hr{
+	position: absolute;
+	width: 800px;
+	border: none;
+	border-top: 3px dashed var(--color-gray);
+	transform: rotate(90deg);
+	left: -300px;
+	top: 140px;
+	z-index: -1;
+}
+
+.trn-info {
+	display: flex;
+	align-items: center;
+
+	margin: 30px 0;
+	font-size: var(--font-sm);
+}
+.trn-info > p {
+	flex-shrink: 0;
+	width: 80px;
+	text-align: right;
+
+	color: var(--color-red);
+	font-weight: 500;
+}
+.trn-info > i {
+	margin: 0 25px 0 10px;
+	flex-shrink: 0;
+	font-size: 1.5em;
+
+	color: var(--color-red);
+	background-color: white;
+}
+
+.trn-info > div > div:nth-child(1) {
+	font-weight: 600;
+	font-size: var(--font-md);
+}
+.trn-info > div > div:nth-child(2) {
+	color: var(--color-gray);
+}
+.trn-info > div > div:nth-child(3) {
+	color: var(--color-gray);
+}
+.trn-info > div > div:nth-child(3) > span {
+	color: var(--color-red);
+	font-weight: 500;
+}

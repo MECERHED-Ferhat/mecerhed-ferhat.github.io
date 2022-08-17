@@ -1,0 +1,37 @@
+footer {
+	padding: 90px 0;
+
+	background-color: var(--color-darkgray);
+}
+
+footer h4 {
+	text-align: center;
+
+	color: white;
+	font-size: var(--font-xl);
+}
+footer h4 span {
+	display: inline-block;
+	border-bottom: 4px solid var(--color-red);
+}
+
+footer div > div {
+	margin: 50px 0;
+
+	color: white;
+}
+footer div > p {
+	line-height: 1.6em;
+	color: var(--color-red);
+	text-align: center;
+	font-size: var(--font-md);
+	font-weight: 700;
+}
+footer div > a {
+	display: block;
+
+	color: white;
+	text-align: center;
+	font-size: var(--font-sm);
+	font-weight: 500;
+}

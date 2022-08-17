@@ -1,0 +1,47 @@
+#prj-list {}
+
+.prj-item + .prj-item {
+	margin-top: 100px;
+}
+
+.prj-img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: max(100px + 20vw, 300px);
+
+	overflow: hidden;
+}
+.prj-img img {
+	flex-shrink: 0;
+	width: auto;
+	height: 100%;
+
+	margin: auto;
+}
+
+.prj-item > h3 {
+	margin-top: 15px;
+	margin-bottom: 12px;
+
+	font-size: var(--font-md);
+	font-weight: 600;
+	line-height: 1.3em;
+}
+.prj-item > p {
+	color: var(--color-darkgray);
+	font-size: var(--font-xs);
+	font-weight: 400;
+}
+
+.prj-item > a {
+	display: block;
+	margin-top: 15px;
+
+	cursor: pointer;
+	text-decoration: none;
+	color: var(--color-red);
+	font-size: var(--font-xs);
+	font-weight: 600;
+}

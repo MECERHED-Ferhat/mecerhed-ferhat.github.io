@@ -1,0 +1,39 @@
+main {
+	height: 650px;
+
+	border-bottom: 1px solid black;
+}
+main > .container {
+	margin-top: min(20vh, 150px);
+}
+
+main h1 {
+	margin-bottom: 15px;
+
+	font-weight: 700;
+	font-size: var(--font-xl);
+	color: var(--color-red);
+}
+main p {
+	margin-bottom: 30px;
+
+	font-size: var(--font-md);
+	font-weight: 300;
+	line-height: 1.3em;
+}
+main p > b {
+	font-weight: 500;
+}
+
+main ul {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	width: 200px;
+	padding: 0px;
+}
+main ul i {
+	font-size: 2em;
+	color: var(--color-gray);
+}

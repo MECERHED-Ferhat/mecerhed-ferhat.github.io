@@ -1,0 +1,38 @@
+header {
+	border-bottom: 1px solid black;
+}
+header > .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	/*
+	margin-top: 35px;
+	margin-bottom: 35px;
+	*/
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#hdr-brand {
+	display: flex;
+	align-items: center;
+
+	font-size: 1.75em;
+	font-weight: 600;
+}
+#hdr-brand > img {
+	width: 30px;
+	height: 30px;
+
+	margin-right: 5px;
+}
+#hdr-brand-dot {
+	color: var(--color-red);
+}
+header i {
+	font-size: 30px;
+	color: var(--color-darkergray);
+
+	cursor: pointer;
+}
