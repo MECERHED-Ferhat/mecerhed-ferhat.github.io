@@ -1,3 +1,7 @@
+section#project {
+	background-color: white;
+}
+
 #prj-list {}
 
 .prj-item + .prj-item {
@@ -40,7 +44,6 @@
 
 	cursor: pointer;
 	text-decoration: none;
-	color: var(--color-red);
 	font-size: var(--font-xs);
 	font-weight: 600;
 }

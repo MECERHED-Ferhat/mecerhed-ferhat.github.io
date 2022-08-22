@@ -12,7 +12,7 @@ main::before {
 	height: 100%;
 
 	background-color: var(--color-lightgray);
-	background-image: url("../assets/de_profil_small.jpg");
+	background-image: url("../assets/bg_sm.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top center;
@@ -21,7 +21,7 @@ main::before {
 main > .container {
 	position: relative;
 
-	padding: 100px 25px 250px 25px;
+	padding: 100px 25px 150px 25px;
 }
 
 main h1 {
@@ -48,10 +48,24 @@ main ul {
 	align-items: center;
 	justify-content: space-between;
 
-	width: 200px;
+	width: 150px;
 	padding: 0px;
+	
+	list-style: none;
 }
 main ul i {
-	font-size: 2em;
+	font-size: 35px;
 	color: var(--color-gray);
+
+	cursor: pointer;
+	transition: 300ms color;
+}
+main ul i.fa-linkedin:hover {
+	color: #0072B1;
+}
+main ul i.fa-square-github:hover {
+	color: black;
+}
+main ul i.fa-square-twitter:hover {
+	color: #1DA1F2;
 }

@@ -1,5 +1,8 @@
-section#sk {
+section {
 	background-color: var(--color-lightgray);
+}
+#sk-list {
+	overflow: visible;
 }
 
 .sk-item {
@@ -29,5 +32,4 @@ section#sk {
 	text-decoration: none;
 	font-size: var(--font-xs);
 	font-weight: 600;
-	color: var(--color-red);
 }

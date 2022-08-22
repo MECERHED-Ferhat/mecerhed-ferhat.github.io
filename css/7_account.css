@@ -1,3 +1,7 @@
+section#account {
+	background-color: white;
+}
+
 #acc-list {
 	display: flex;
 	justify-content: space-evenly;

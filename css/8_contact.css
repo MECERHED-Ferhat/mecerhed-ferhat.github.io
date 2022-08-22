@@ -1,7 +1,7 @@
 footer {
 	padding: 90px 0;
 
-	background-color: var(--color-darkgray);
+	background-color: #818181;
 }
 
 footer h4 {
@@ -15,20 +15,21 @@ footer h4 span {
 	border-bottom: 4px solid var(--color-red);
 }
 
-footer div > div {
+footer div > address {
 	margin: 50px 0;
 
+	font-style: normal;
 	color: white;
+	text-align: center;
 }
-footer div > p {
+footer address > p {
 	line-height: 1.6em;
 	color: var(--color-red);
-	text-align: center;
 	font-size: var(--font-md);
 	font-weight: 700;
 }
-footer div > a {
-	display: block;
+footer address > a {
+	display: inline-block;
 
 	color: white;
 	text-align: center;

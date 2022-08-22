@@ -14,10 +14,22 @@
 	<link rel="stylesheet" type="text/css" href="css/7_account.css">
 	<link rel="stylesheet" type="text/css" href="css/8_contact.css">
 
+	<script src="js/0_main.js" defer></script>
+	<script src="js/1_header.js" defer></script>
+	<script src="js/2_home.js" defer></script>
+	<script src="js/3_project.js" defer></script>
+	<script src="js/4_skill.js" defer></script>
+	<script src="js/5_training.js" defer></script>
+	<script src="js/6_certif.js" defer></script>
+	<script src="js/7_account.js" defer></script>
+	<script src="js/8_contact.js" defer></script>
+
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/c15bc99262.js" crossorigin="anonymous"></script>
+
+	<link rel="prefetch" href="./assets/nse_i.png">
 
 	<title>Mecerhed Ferhat - Portfolio</title>
 </head>
@@ -27,10 +39,10 @@
 	<!-- HEADER -->
 	<header id="hdr">
 		<div class="container">
-			<div id="hdr-brand">
+			<a id="hdr-brand" href="#">
 				<img src="assets/Logo.png">
 				<span>Ferhat<span id="hdr-brand-dot">.</span></span>
-			</div>
+			</a>
 		
 			<i class="fa-solid fa-bars"></i>
 
@@ -40,31 +52,39 @@
 	
 	<!-- NAVBAR -->
 	<nav id="nav">
-		<i class="fa-solid fa-xmark"></i>
+		<div id="nav-filler"></div>
+		<div id="nav-nav">
+			<i class="fa-solid fa-xmark"></i>
 
-		<ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="#">Project</a></li>
-			<li><a href="#">Skills</a></li>
-			<li><a href="#">Training</a></li>
-			<li><a href="#">Certifications</a></li>
-			<li><a href="#">Contact</a></li>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Project</a></li>
+				<li><a href="#">Skills</a></li>
+				<li><a href="#">Training</a></li>
+				<li><a href="#">Certifications</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>	
 		</div>
 	</nav>
 
 
 	<!-- HOME -->
-	<main id="hm">
+	<main id="home">
 
 		<div class="container">
 				<h1>Mecerhed Ferhat</h1>
 				<p>Holder of a <b>Master's degree</b> in <b>computer science</b>. Qualified and certified in <b>cybersecurity</b> and <b>computer networks</b>. Excellent full-stack <b>web developer</b>.</p>
 
 				<ul>
-					<li><i class="fa-brands fa-linkedin"></i></li>
-					<li><i class="fa-brands fa-square-github"></i></li>
-					<li><i class="fa-brands fa-square-facebook"></i></li>
-					<li><i class="fa-brands fa-square-twitter"></i></li>
+					<li><a target="_blank" href="https://www.linkedin.com/in/ferhat-mecerhed/">
+						<i class="fa-brands fa-linkedin"></i>
+					</a></li>
+					<li><a target="_blank" href="https://github.com/MECERHED-Ferhat/">
+						<i class="fa-brands fa-square-github"></i>
+					</a></li>
+					<li><a target="_blank" href="https://twitter.com/FMecerhed">
+						<i class="fa-brands fa-square-twitter"></i>
+					</a></li>
 				</ul>
 
 		</div>
@@ -72,7 +92,7 @@
 
 
 	<!-- PROJECT -->
-	<section id="prj">
+	<section id="project">
 		<div class="container">
 			<div class="title">
 				<h2>Recent Work</h2>
@@ -87,8 +107,8 @@
 					</div>
 					<h3>IA-based defense system for SDN/NFV environnements</h3>
 					<p>The new trend for SDN/NFV environnements brings more security challenge. This thesis propose the following contributions: an in-depth taxonomy of SDN vulnerabilities, a light and powerful defense system simulated with Mininet, creation of an unpublished dataset available online for ML algorithms training, data plane programming thanks to the new P4 language!</p>
-					<a href="#">Learn more in this paper →</a>
-					<a href="#">Check out my open-source Dataset →</a>
+					<a target="_blank" class="red_link" href="https://drive.google.com/drive/folders/1RS_1QHOr_cVFBtywFdeuefqn94O_3cUm?usp=sharing">Learn more in this paper →</a>
+					<a target="_blank" class="red_link" href="https://www.kaggle.com/datasets/ferhatmecerhed/windowbased-traffic-capture-for-flooding-attacks">Check out my open-source Dataset →</a>
 				</div>
 
 				<div class="prj-item">
@@ -97,7 +117,7 @@
 					</div>
 					<h3>Web application for a digital library</h3>
 					<p>Knowledge is now digitalized! On behalf of the CERIST center, i developped an entire web application with the following: A from stratch Front-End build on an ergonomic UX/UI model, the Django framework serves for Back-end of the app, managing both SQL and XML/RDF databases, a modern and aesthetic design.</p>
-					<a href="#">Check out the full application code →</a>
+					<a target="_blank" class="red_link" href="https://github.com/MECERHED-Ferhat/Cerist_USTHB">Check out the full application code →</a>
 				</div>
 
 				<div class="prj-item">
@@ -106,7 +126,7 @@
 					</div>
 					<h3>Desktop application for stock management</h3>
 					<p>What could be better than stand-alone software designed specifically to meet your needs? On behalf of the VisDias company, this java application can handle monetary and market transaction, keeps track of the company’s inventory and production, calculates and prints out delivery notes and purchase orders. You can download and use this software right now !</p>
-					<a href="#">Start using this software for free →</a>
+					<a target="_blank" class="red_link" href="https://github.com/MECERHED-Ferhat/Stock-Management-Software">Start using this software for free →</a>
 				</div>
 
 				<div class="prj-item">
@@ -123,7 +143,7 @@
 					</div>
 					<h3>Twitter like web application</h3>
 					<p>To test my skills in both ReactJS framework and Django Rest Framework (DRF), i did a replica of the famous social network Twitter. The front-end application and the REST API are deployed separately and are now accessible. Make sure to leave a feedback there !</p>
-					<a href="#">View the website →</a>
+					<a target="_blank" class="red_link" href="https://twitter-like-front.vercel.app/home">View the website →</a>
 				</div>
 
 				<div class="prj-item">
@@ -132,7 +152,7 @@
 					</div>
 					<h3>Simulation of an E-Vote operation</h3>
 					<p>Being able to vote from anywhere is the future of election, but to ensure a safe procedure and the authenticity of the result, numerous crypthographic operations need to be applied. In this simulation coded entirely with Python, a simulated network of various entities work together to provide a fair election and render results within seconds !</p>
-					<a href="#">Check out the code →</a>
+					<a target="_blank" class="red_link" href="https://github.com/MECERHED-Ferhat/E-Voting-Software">Check out the code →</a>
 				</div>
 
 				<div class="prj-item">
@@ -141,7 +161,7 @@
 					</div>
 					<h3>Windows Trojan containing a Spyware</h3>
 					<p>Made for educational purposes only. This trojan affects a windows target and install a permanent spyware, the later captures audio via the host's microphone and sends it to a remote host. The virus hides itself and modify system registers, to use with exterm caution.</p>
-					<a href="#">Check out the code →</a>
+					<a target="_blank" class="red_link" href="https://github.com/MECERHED-Ferhat/Spyware-Exemple">Check out the code →</a>
 				</div>
 
 				<div class="prj-item">
@@ -150,7 +170,7 @@
 					</div>
 					<h3>REALLY vulnerable web application</h3>
 					<p>What better way to sharpen your knives than with a good vulnerable web application? This basic PHP web application contains 5 linked vulnerabilities to get server access. Would you be able to find them?<br>(Do not deploy out to the internet !)</p>
-					<a href="#">Download the application (and have fun) →</a>
+					<a target="_blank" class="red_link" href="https://github.com/MECERHED-Ferhat/Vulnerable-Application-Exemple">Download the application (and have fun) →</a>
 				</div>
 
 			</div>
@@ -160,7 +180,7 @@
 
 
 	<!-- SKILL -->
-	<section id="sk">
+	<section id="skill">
 		<div class="container">
 			<div class="title">
 				<h2>What i'm good at</h2>
@@ -183,7 +203,7 @@
 					<h3>Python scripting</h3>
 					<p>My goto langage for over 5 years. Great knowledge of the langage and various packages.</p>
 
-					<a href="#">My Python doc</a>
+					<a target="_blank" class="red_link" href="https://drive.google.com/drive/folders/1sOvfz9pg2cw2BIUJdA0YxtLyuH9dqIj3?usp=sharing">My Python doc</a>
 				</div>
 
 				<div class="sk-item">
@@ -195,7 +215,7 @@
 					<h3>Javascript & ReactJS</h3>
 					<p>Moderate to advance knowledge of the langage, with its major revision ES6. Coupled with a decent knowledge of the ReactJS framework.</p>
 
-					<a href="#">My JS doc</a>
+					<a target="_blank" class="red_link" href="https://drive.google.com/drive/folders/1XtNgEpGFjYzZqRGF4GW1eVS7cCV1zEyE?usp=sharing">My JS doc</a>
 				</div>
 
 				<div class="sk-item">
@@ -207,26 +227,28 @@
 					<h3>Linux distribution</h3>
 					<p>Good handling of the OS and a decent knowledge of commands and OS functionalities.</p>
 
-					<a href="#">My Linux doc</a>
+					<a target="_blank" class="red_link" href="https://drive.google.com/drive/folders/1mHRqT6aiA0zMogvckrR9Spw3UQ_nALo1?usp=sharing">My Linux doc</a>
 				</div>
 
 				<div class="sk-item">
 					<h3>Cisco & Huawei equipement</h3>
 					<p>Aleardy familiar with Cisco and Huawei commands to configure network devices.</p>
 
-					<a href="#">My Cisco / Huawei doc</a>
+					<a target="_blank" class="red_link" href="https://drive.google.com/drive/folders/1kZHGkuq0Dh02KTs7Tg-_FBz0U1mayT15?usp=sharing">My Cisco / Huawei doc</a>
 				</div>
 
 				<div class="sk-item">
 					<h3>Machine learning</h3>
-					<p>Both theoretical and practical knowledge of machine learning. I’ve aleardy used a number of ML algorithms and manipulated/cleaned an important amount of data.</p>
+					<p>Both theoretical and practical knowledge of machine learning and data processing.</p>
+
+					<a target="_blank" class="red_link" href="https://www.kaggle.com/datasets/ferhatmecerhed/windowbased-traffic-capture-for-flooding-attacks">Download one of my datasets</a>
 				</div>
 
 				<div class="sk-item">
 					<h3>Languages</h3>
 					<p>All languages that i know and use:<br>Python, JS, HTML5, CSS3, Java, PHP, C, SQL</p>
 
-					<a href="#">My Java / PHP / C / SQL doc</a>
+					<a target="_blank" class="red_link" href="https://drive.google.com/drive/folders/1g0TQsOJmNghQhKrMYHEd5Kyh8h8WgH1u?usp=sharing">My Java / PHP / C / SQL doc</a>
 				</div>
 
 			</div>
@@ -236,7 +258,7 @@
 
 
 	<!-- TRAINING -->
-	<section id="trn">
+	<section id="training">
 		<div class="container">
 			<div class="title">
 				<h2>My journey</h2>
@@ -244,7 +266,6 @@
 			</div>
 
 			<div id="trn-graph">
-				<hr>
 				<div class="trn-info">
 					<p>June 2022</p>
 					<i class="fa-regular fa-circle"></i>
@@ -282,7 +303,7 @@
 
 
 	<!-- CERTIFICATION -->
-	<section id="crt">
+	<section id="certification">
 		<div class="container">
 			<div class="title">
 				<h2>My attested knowledge</h2>
@@ -291,32 +312,32 @@
 
 			<div id="crt-list">
 
-				<div class="crt-item">
+				<div class="crt-item" id="cisco_ntw">
 					<img src="assets/cisco.png">
 					<div class="crt-item-info">
 						<div>CCNA lvl 3</div>
 						<div>Cisco Networking Academy</div>
 					</div>
 					<div class="crt-item-btn">
-						<input type="radio" name="ccna" checked>
-						<input type="radio" name="ccna">
-						<input type="radio" name="ccna">
+						<input data-crt="cisco_ntw" data-crt-name="CCNA lvl 3" type="radio" name="ccna" checked>
+						<input data-crt="cisco_ntw" data-crt-name="CCNA lvl 2" type="radio" name="ccna">
+						<input data-crt="cisco_ntw" data-crt-name="CCNA lvl 1" type="radio" name="ccna">
 					</div>
 				</div>
 				
-				<div class="crt-item">
+				<div class="crt-item" id="fortinet">
 					<img src="assets/nse_ii.png">
 					<div class="crt-item-info">
 						<div>NSE II</div>
 						<div>Fortinet</div>
 					</div>
 					<div class="crt-item-btn">
-						<input type="radio" name="fortinet" checked>
-						<input type="radio" name="fortinet">
+						<input data-crt="fortinet" data-crt-name="NSE II" data-crt-img="assets/nse_ii.png" type="radio" name="fortinet" checked>
+						<input data-crt="fortinet" data-crt-name="NSE I" data-crt-img="assets/nse_i.png" type="radio" name="fortinet">
 					</div>
 				</div>
 				
-				<div class="crt-item">
+				<div class="crt-item" id="huawei">
 					<img src="assets/huawei.png">
 					<div class="crt-item-info">
 						<div>HCIA Security</div>
@@ -325,15 +346,15 @@
 					<div class="crt-item-btn"></div>
 				</div>
 				
-				<div class="crt-item">
+				<div class="crt-item" id="cisco_cs">
 					<img src="assets/cisco.png">
 					<div class="crt-item-info">
 						<div>Cybersecurity Essentials</div>
 						<div>Cisco Networking Academy</div>
 					</div>
 					<div class="crt-item-btn">
-						<input type="radio" name="cyber-cisco" checked>
-						<input type="radio" name="cyber-cisco">
+						<input data-crt="cisco_cs" data-crt-name="Cybersecurity Essentials" type="radio" name="cyber-cisco" checked>
+						<input data-crt="cisco_cs" data-crt-name="Introduction to cybersecurity" type="radio" name="cyber-cisco">
 					</div>
 				</div>
 
@@ -343,7 +364,7 @@
 	</section>
 
 	<!-- ACCOUNT -->
-	<section id="acc">
+	<section id="account">
 		<div class="container">
 			<div class="title">
 				<h2>Join me</h2>
@@ -352,25 +373,25 @@
 
 			<div id="acc-list">
 				
-				<div class="acc-item" data-link="https://tryhackme.com/p/Ferhat.Mecerhed">
+				<a class="acc-item" href="https://tryhackme.com/p/Ferhat.Mecerhed">
 					<img src="assets/tryhackme.png">
 					<p>TryHackMe</p>
-				</div>
+				</a>
 
-				<div class="acc-item" data-link="https://app.hackthebox.com/profile/1163806">
+				<a class="acc-item" href="https://app.hackthebox.com/profile/1163806">
 					<img src="assets/hackthebox.png">
 					<p>Hack The Box</p>
-				</div>
+				</a>
 
-				<div class="acc-item" data-link="https://ctflearn.com/user/Ferhat">
+				<a class="acc-item" href="https://ctflearn.com/user/Ferhat">
 					<img src="assets/ctflearn.png">
 					<p>CTFLearn</p>
-				</div>
+				</a>
 
-				<div class="acc-item" data-link="https://github.com/MECERHED-Ferhat">
+				<a class="acc-item" href="https://github.com/MECERHED-Ferhat">
 					<i class="fa-brands fa-github"></i>
 					<p>Github</p>
-				</div>
+				</a>
 
 			</div>
 		</div>
@@ -378,30 +399,28 @@
 
 
 	<!-- CONTACT -->
-	<footer id="ct">
+	<footer id="contact">
 		<div class="container">
 			<h4><span>Contact Me</span></h4>
 			
-			<div>
+			<address>
 				<p>Email</p>
-				<a href="#">ferhat.mecerhed@gmail.com</a>
-			</div>
+				<a href="mailto:ferhat.mecerhed@gmail.com">ferhat.mecerhed@gmail.com</a>
+			</address>
 				
-			<div>
+			<address>
 				<p>Phone number</p>
-				<a href="#">+213 540 24 20 49</a>
-			</div>
+				<a href="tel:+213540242049">+213 540 24 20 49</a>
+			</address>
 
-			<div>
+			<address>
 				<p>LinkedIn</p>
-				<a href="#">https://www.linkedin.com/in/ferhat-mecerhed/</a>
-			</div>
+				<a target="_blank" href="https://www.linkedin.com/in/ferhat-mecerhed/">https://www.linkedin.com/in/ferhat-mecerhed/</a>
+			</address>
 		
 		</div>
 	</footer>
 
 </body>
-
-<script src="script.js"></script>
 
 </html>
