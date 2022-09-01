@@ -55,6 +55,28 @@ section#project {
 }
 
 
+button#prj-more {
+	display: block;
+	margin: auto;
+	margin-top: 50px;
+	padding: 12px 30px;
+
+	color: var(--color-red);
+	font-size: var(--font-sm);
+	font-weight: 600;
+	cursor: pointer;
+	background-color: white;
+	border: 3px solid var(--color-red);
+	border-radius: 6px;
+
+	transition: 200ms color, 200ms background-color;
+}
+button#prj-more:hover {
+	background-color: var(--color-red);
+	color: white;
+}
+
+
 @media only screen and (min-width: 1024px) {
 	.prj-item {display: flex; align-items: center;}
 	.prj-text {box-sizing: content-box; width: 49%; margin-left: 1%;}

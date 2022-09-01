@@ -37,8 +37,10 @@ section {
 	font-weight: 600;
 }
 
-@media only screen and (min-width: 860px) {
+@media only screen and (min-width: 880px) {
 	.sk-item {
 		width: 365px;
+		margin-left: 10px;
+		margin-right: 10px;
 	}
 }

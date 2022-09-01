@@ -28,7 +28,7 @@ html {
 }
 body {
 	min-width: 320px;
-	overflow: unset;
+	overflow: hidden;
 }
 
 i {
@@ -42,6 +42,10 @@ section {
 a, a:hover, a:link, a:focus, a:active {
 	color: inherit;
 	text-decoration: none;
+}
+
+.hidden {
+	display: none !important;
 }
 
 .container {
@@ -105,6 +109,37 @@ a, a:hover, a:link, a:focus, a:active {
 		--font-xl: 2.3em;
 	}
 	@media only screen and (min-width: 1024px) {
-		.container {max-width: 1080px;}
+		.container {max-width: 1190px;}
 	}
+}
+
+
+/* Preload */
+#load {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	opacity: 1;
+	background-color: white;
+	z-index: 1000;
+	transition: 300ms opacity;
+}
+#load-icon {
+  border: 16px solid var(--color-lightgray); /* Light grey */
+  border-top: 16px solid var(--color-red); /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
