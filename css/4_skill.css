@@ -2,17 +2,20 @@ section {
 	background-color: var(--color-lightgray);
 }
 #sk-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+
 	overflow: visible;
 }
 
 .sk-item {
+	margin: 10px 0 25px 0;
 	padding: 30px 20px;
+	max-width: 570px;
 
 	border-top: 2px solid var(--color-red);
 	background-color: white;
-}
-.sk-item + .sk-item {
-	margin-top: 25px;
 }
 
 .sk-item > h3 {
@@ -32,4 +35,10 @@ section {
 	text-decoration: none;
 	font-size: var(--font-xs);
 	font-weight: 600;
+}
+
+@media only screen and (min-width: 860px) {
+	.sk-item {
+		width: 365px;
+	}
 }

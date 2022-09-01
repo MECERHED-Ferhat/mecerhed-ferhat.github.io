@@ -52,6 +52,23 @@ header i:hover {
 	color: var(--color-darkergray);
 }
 
+header ul {
+	display: none;
+
+	list-style: none;
+	font-size: var(--font-sm);
+}
+header ul li {
+	margin: 0px 10px;
+
+	color: black;
+	font-weight: 400;
+	transition: 300ms color;
+}
+header ul li:hover {
+	color: var(--color-darkergray);
+}
+
 /* NAVBAR */
 nav {
 	display: none;
@@ -114,4 +131,10 @@ nav {
 }
 #nav-nav > ul > li > a:hover, #nav-nav > ul > li > a.selected_li {
 	color: var(--color-red);
+}
+
+
+@media only screen and (min-width: 1024px) {
+	header ul {display: flex;}
+	header i {display: none !important;}
 }

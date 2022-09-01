@@ -8,6 +8,7 @@ section#project {
 	margin-top: 100px;
 }
 
+
 .prj-img {
 	display: flex;
 	justify-content: center;
@@ -24,26 +25,38 @@ section#project {
 	margin: auto;
 }
 
-.prj-item > h3 {
-	margin-top: 15px;
+.prj-text {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.prj-item h3 {
 	margin-bottom: 12px;
 
 	font-size: var(--font-md);
 	font-weight: 600;
 	line-height: 1.3em;
 }
-.prj-item > p {
+.prj-item p {
 	color: var(--color-darkgray);
 	font-size: var(--font-xs);
 	font-weight: 400;
 }
 
-.prj-item > a {
+.prj-item a {
 	display: block;
+	width: fit-content;
 	margin-top: 15px;
 
 	cursor: pointer;
 	text-decoration: none;
 	font-size: var(--font-xs);
 	font-weight: 600;
+}
+
+
+@media only screen and (min-width: 1024px) {
+	.prj-item {display: flex; align-items: center;}
+	.prj-text {box-sizing: content-box; width: 49%; margin-left: 1%;}
+	.prj-img {box-sizing: content-box; width: 49%; margin-right: 1%;}
 }

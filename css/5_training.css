@@ -16,7 +16,7 @@ section#training {
 }
 .trn-info > p {
 	flex-shrink: 0;
-	width: 80px;
+	width: 100px;
 	text-align: right;
 
 	color: var(--color-red);
@@ -44,4 +44,8 @@ section#training {
 .trn-info > div > div:nth-child(3) > span {
 	color: var(--color-red);
 	font-weight: 500;
+}
+
+@media only screen and (min-width: 600px) {
+	#trn-graph {padding-left: 5%;}
 }

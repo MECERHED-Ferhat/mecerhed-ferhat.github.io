@@ -36,3 +36,23 @@ footer address > a {
 	font-size: var(--font-sm);
 	font-weight: 500;
 }
+
+
+@media only screen and (min-width: 720px) {
+	footer address {
+		display: flex;
+		align-items: center;
+	}
+	footer address > p {
+		flex: 1;
+		padding-right: 2%;
+
+		text-align: right;
+	}
+	footer address > a {
+		flex: 1;
+		padding-left: 2%;
+
+		text-align: left;
+	}
+}

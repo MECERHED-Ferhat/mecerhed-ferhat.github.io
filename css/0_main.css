@@ -23,23 +23,13 @@
 	--font-lg: 1.75em;
 	--font-xl: 2.25em;
 }
-
+html {
+	scroll-behavior: smooth;
+}
 body {
 	min-width: 320px;
 	overflow: unset;
 }
-
-/*
-@media only screen and (min-width: 500px) {
-	.container {max-width: var(--minwidth-sm);}
-	@media only screen and (min-width: 800px) {
-		.container {max-width: var(--minwidth-md);}
-		@media only screen and (min-width: 1200px) {
-			.container {max-width: var(--minwidth-lg);}
-		}
-	}
-}
-*/
 
 i {
 	padding: 1px;
@@ -56,7 +46,7 @@ a, a:hover, a:link, a:focus, a:active {
 
 .container {
 	width: 100%;
-	max-width: 540px;
+	max-width: 600px;
 
 	margin-left: auto;
 	margin-right: auto;
@@ -95,10 +85,26 @@ a, a:hover, a:link, a:focus, a:active {
 	top: 0;
 	left: 0;
 
+	border: 1px solid #eee;
 	transition: 300ms top, 300ms box-shadow;
 }
 .sk-item:hover, .crt-item:hover, .acc-item:hover {
 	top: -3px;
 
 	box-shadow: 0 10px 30px -10px rgb(0 0 0 / 40%);
+}
+
+
+@media only screen and (min-width: 720px) {
+	.container {width: 94%; max-width: 850px;}
+	:root {
+		--font-xs: 1em;
+		--font-sm: 1.1em;
+		--font-md: 1.3em;
+		--font-lg: 1.8em;
+		--font-xl: 2.3em;
+	}
+	@media only screen and (min-width: 1024px) {
+		.container {max-width: 1080px;}
+	}
 }

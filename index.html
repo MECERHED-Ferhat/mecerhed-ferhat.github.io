@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset = UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="ferhat, mecerhed, cybersecurity engineer, network engineer, software developer, web, algeria, algerian">
+	<meta name = "author" content = "Mecerhed Ferhat" />
+	<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+	<meta name="description" content="Holder of a Master's degree in computer science. Qualified and certified in cybersecurity and computer networks. Excellent full-stack web developer.">
 
 	<link rel="stylesheet" type="text/css" href="css/0_main.css">
 	<link rel="stylesheet" type="text/css" href="css/1_header.css">
@@ -30,6 +34,8 @@
 	<script src="https://kit.fontawesome.com/c15bc99262.js" crossorigin="anonymous"></script>
 
 	<link rel="prefetch" href="./assets/nse_i.png">
+	<link rel="prefetch" href="./assets/bg_md.jpg">
+
 
 	<title>Mecerhed Ferhat - Portfolio</title>
 </head>
@@ -46,6 +52,15 @@
 		
 			<i class="fa-solid fa-bars"></i>
 
+			<ul id="hdr-nav">
+				<li><a href="#">Home</a></li>
+				<li><a href="#project">Project</a></li>
+				<li><a href="#skill">Skills</a></li>
+				<li><a href="#training">Training</a></li>
+				<li><a href="#certification">Certifications</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+	
 		</div>
 	</header>
 
@@ -58,11 +73,11 @@
 
 			<ul>
 				<li><a href="#">Home</a></li>
-				<li><a href="#">Project</a></li>
-				<li><a href="#">Skills</a></li>
-				<li><a href="#">Training</a></li>
-				<li><a href="#">Certifications</a></li>
-				<li><a href="#">Contact</a></li>
+				<li><a href="#project">Project</a></li>
+				<li><a href="#skill">Skills</a></li>
+				<li><a href="#training">Training</a></li>
+				<li><a href="#certification">Certifications</a></li>
+				<li><a href="#contact">Contact</a></li>
 			</ul>	
 		</div>
 	</nav>
@@ -72,9 +87,11 @@
 	<main id="home">
 
 		<div class="container">
+			<div id="home-filler"></div>
+			<div id="home-text">
 				<h1>Mecerhed Ferhat</h1>
 				<p>Holder of a <b>Master's degree</b> in <b>computer science</b>. Qualified and certified in <b>cybersecurity</b> and <b>computer networks</b>. Excellent full-stack <b>web developer</b>.</p>
-
+				
 				<ul>
 					<li><a target="_blank" href="https://www.linkedin.com/in/ferhat-mecerhed/">
 						<i class="fa-brands fa-linkedin"></i>
@@ -86,6 +103,7 @@
 						<i class="fa-brands fa-square-twitter"></i>
 					</a></li>
 				</ul>
+			</div>
 
 		</div>
 	</main>
@@ -105,72 +123,88 @@
 					<div class="prj-img">
 						<img src="assets/pfe_wall.png">
 					</div>
-					<h3>IA-based defense system for SDN/NFV environnements</h3>
-					<p>The new trend for SDN/NFV environnements brings more security challenge. This thesis propose the following contributions: an in-depth taxonomy of SDN vulnerabilities, a light and powerful defense system simulated with Mininet, creation of an unpublished dataset available online for ML algorithms training, data plane programming thanks to the new P4 language!</p>
-					<a target="_blank" class="red_link" href="https://drive.google.com/drive/folders/1RS_1QHOr_cVFBtywFdeuefqn94O_3cUm?usp=sharing">Learn more in this paper →</a>
-					<a target="_blank" class="red_link" href="https://www.kaggle.com/datasets/ferhatmecerhed/windowbased-traffic-capture-for-flooding-attacks">Check out my open-source Dataset →</a>
+					<div class="prj-text">
+						<h3>IA-based defense system for SDN/NFV environnements</h3>
+						<p>The new trend for SDN/NFV environnements brings more security challenge. This thesis propose the following contributions: an in-depth taxonomy of SDN vulnerabilities, a light and powerful defense system simulated with Mininet, creation of an unpublished dataset available online for ML algorithms training, data plane programming thanks to the new P4 language!</p>
+						<a target="_blank" class="red_link" href="https://drive.google.com/drive/folders/1RS_1QHOr_cVFBtywFdeuefqn94O_3cUm?usp=sharing">Learn more in this paper →</a>
+						<a target="_blank" class="red_link" href="https://www.kaggle.com/datasets/ferhatmecerhed/windowbased-traffic-capture-for-flooding-attacks">Check out my open-source Dataset →</a>
+					</div>
 				</div>
 
 				<div class="prj-item">
 					<div class="prj-img">
 						<img src="assets/cerist_wall.png">
 					</div>
-					<h3>Web application for a digital library</h3>
-					<p>Knowledge is now digitalized! On behalf of the CERIST center, i developped an entire web application with the following: A from stratch Front-End build on an ergonomic UX/UI model, the Django framework serves for Back-end of the app, managing both SQL and XML/RDF databases, a modern and aesthetic design.</p>
-					<a target="_blank" class="red_link" href="https://github.com/MECERHED-Ferhat/Cerist_USTHB">Check out the full application code →</a>
+					<div class="prj-text">
+						<h3>Web application for a digital library</h3>
+						<p>Knowledge is now digitalized! On behalf of the CERIST center, i developped an entire web application with the following: A from stratch Front-End build on an ergonomic UX/UI model, the Django framework serves for Back-end of the app, managing both SQL and XML/RDF databases, a modern and aesthetic design.</p>
+						<a target="_blank" class="red_link" href="https://github.com/MECERHED-Ferhat/Cerist_USTHB">Check out the full application code →</a>
+					</div>
 				</div>
 
 				<div class="prj-item">
 					<div class="prj-img">
 						<img src="assets/visdias_wall.png">
 					</div>
-					<h3>Desktop application for stock management</h3>
-					<p>What could be better than stand-alone software designed specifically to meet your needs? On behalf of the VisDias company, this java application can handle monetary and market transaction, keeps track of the company’s inventory and production, calculates and prints out delivery notes and purchase orders. You can download and use this software right now !</p>
-					<a target="_blank" class="red_link" href="https://github.com/MECERHED-Ferhat/Stock-Management-Software">Start using this software for free →</a>
+					<div class="prj-text">
+						<h3>Desktop application for stock management</h3>
+						<p>What could be better than a stand-alone software designed specifically to meet your needs? On behalf of the VisDias company, this java application can handle monetary and market transaction, keeps track of the company’s inventory and production, calculates and prints out delivery notes and purchase orders. You can download and use this software right now !</p>
+						<a target="_blank" class="red_link" href="https://github.com/MECERHED-Ferhat/Stock-Management-Software">Start using this software for free →</a>
+					</div>
 				</div>
 
 				<div class="prj-item">
 					<div class="prj-img">
 						<img src="assets/portfolio.png">
 					</div>
-					<h3>My personal portfolio</h3>
-					<p>My skills as a web developper can be judged from this exact website. Make sure to appreciate the HTML semantic, the CSS innovation, and the JS logic. Note that this website has no backend.</p>
+					<div class="prj-text">
+						<h3>My personal portfolio</h3>
+						<p>My skills as a frontend web developper can be judged from this exact website. Make sure to appreciate the HTML semantic, the CSS innovation, and the JS logic. Note that this website has no backend.</p>
+					</div>
 				</div>
 
 				<div class="prj-item">
 					<div class="prj-img">
 						<img src="assets/twitter.png">
 					</div>
-					<h3>Twitter like web application</h3>
-					<p>To test my skills in both ReactJS framework and Django Rest Framework (DRF), i did a replica of the famous social network Twitter. The front-end application and the REST API are deployed separately and are now accessible. Make sure to leave a feedback there !</p>
-					<a target="_blank" class="red_link" href="https://twitter-like-front.vercel.app/home">View the website →</a>
+					<div class="prj-text">
+						<h3>Twitter like web application</h3>
+						<p>To test my skills in both ReactJS framework and Django Rest Framework (DRF), i did a replica of the famous social network Twitter. The front-end application and the REST API are deployed separately and are now accessible. Make sure to leave a feedback there !</p>
+						<a target="_blank" class="red_link" href="https://twitter-like-front.vercel.app/home">View the website →</a>
+					</div>
 				</div>
 
 				<div class="prj-item">
 					<div class="prj-img">
 						<img src="assets/evote.png">
 					</div>
-					<h3>Simulation of an E-Vote operation</h3>
-					<p>Being able to vote from anywhere is the future of election, but to ensure a safe procedure and the authenticity of the result, numerous crypthographic operations need to be applied. In this simulation coded entirely with Python, a simulated network of various entities work together to provide a fair election and render results within seconds !</p>
-					<a target="_blank" class="red_link" href="https://github.com/MECERHED-Ferhat/E-Voting-Software">Check out the code →</a>
+					<div class="prj-text">
+						<h3>Simulation of an E-Vote operation</h3>
+						<p>Being able to vote from anywhere is the future of election, but to ensure a safe procedure and the authenticity of the result, numerous crypthographic operations need to be applied. In this simulation coded entirely with Python, a simulated network of various entities work together to provide a fair election and render results within seconds !</p>
+						<a target="_blank" class="red_link" href="https://github.com/MECERHED-Ferhat/E-Voting-Software">Check out the code →</a>
+					</div>
 				</div>
 
 				<div class="prj-item">
 					<div class="prj-img">
 						<img src="assets/spyware.png">
 					</div>
-					<h3>Windows Trojan containing a Spyware</h3>
-					<p>Made for educational purposes only. This trojan affects a windows target and install a permanent spyware, the later captures audio via the host's microphone and sends it to a remote host. The virus hides itself and modify system registers, to use with exterm caution.</p>
-					<a target="_blank" class="red_link" href="https://github.com/MECERHED-Ferhat/Spyware-Exemple">Check out the code →</a>
+					<div class="prj-text">
+						<h3>Windows Trojan containing a Spyware</h3>
+						<p>Made for educational purposes only. This trojan affects a windows target and install a permanent spyware, the later captures audio via the host's microphone and sends it to a remote host. The virus hides itself and modify system registers, to use with exterm caution.</p>
+						<a target="_blank" class="red_link" href="https://github.com/MECERHED-Ferhat/Spyware-Exemple">Check out the code →</a>
+					</div>
 				</div>
 
 				<div class="prj-item">
 					<div class="prj-img">
 						<img src="assets/dvwa.png">
 					</div>
-					<h3>REALLY vulnerable web application</h3>
-					<p>What better way to sharpen your knives than with a good vulnerable web application? This basic PHP web application contains 5 linked vulnerabilities to get server access. Would you be able to find them?<br>(Do not deploy out to the internet !)</p>
-					<a target="_blank" class="red_link" href="https://github.com/MECERHED-Ferhat/Vulnerable-Application-Exemple">Download the application (and have fun) →</a>
+					<div class="prj-text">
+						<h3>REALLY vulnerable web application</h3>
+						<p>What better way to sharpen your knives than with a good vulnerable web application? This basic PHP web application contains 5 linked vulnerabilities to get server access. Would you be able to find them?<br>(Do not deploy out to the internet !)</p>
+						<a target="_blank" class="red_link" href="https://github.com/MECERHED-Ferhat/Vulnerable-Application-Exemple">Download the application (and have fun) →</a>
+					</div>
 				</div>
 
 			</div>
@@ -246,7 +280,7 @@
 
 				<div class="sk-item">
 					<h3>Languages</h3>
-					<p>All languages that i know and use:<br>Python, JS, HTML5, CSS3, Java, PHP, C, SQL</p>
+					<p>All languages that i know and use: Python, JS, HTML5, CSS3, Java, PHP, C, SQL</p>
 
 					<a target="_blank" class="red_link" href="https://drive.google.com/drive/folders/1g0TQsOJmNghQhKrMYHEd5Kyh8h8WgH1u?usp=sharing">My Java / PHP / C / SQL doc</a>
 				</div>
@@ -357,18 +391,28 @@
 						<input data-crt="cisco_cs" data-crt-name="Introduction to cybersecurity" type="radio" name="cyber-cisco">
 					</div>
 				</div>
+				
+				<div class="crt-item" id="metactf">
+					<img src="assets/metactf.png">
+					<div class="crt-item-info">
+						<div>MetaCTF 2021</div>
+						<div>MetaCTF</div>
+					</div>
+					<div class="crt-item-btn"></div>
+				</div>
 
 			</div>
 
 		</div>
 	</section>
 
+
 	<!-- ACCOUNT -->
 	<section id="account">
 		<div class="container">
 			<div class="title">
-				<h2>Join me</h2>
-				<h1>Accounts</h1>
+				<h2>Invite me</h2>
+				<h1>My Accounts</h1>
 			</div>
 
 			<div id="acc-list">

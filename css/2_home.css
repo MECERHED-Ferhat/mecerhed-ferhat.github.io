@@ -17,8 +17,10 @@ main::before {
 	background-size: cover;
 	background-position: top center;
 	opacity: .4;
+	border-radius: 0 0 35% 0;
 }
 main > .container {
+	display: flex;
 	position: relative;
 
 	padding: 100px 25px 150px 25px;
@@ -48,14 +50,14 @@ main ul {
 	align-items: center;
 	justify-content: space-between;
 
-	width: 150px;
+	width: 180px;
 	padding: 0px;
 	
 	list-style: none;
 }
 main ul i {
-	font-size: 35px;
-	color: var(--color-gray);
+	font-size: 40px;
+	color: var(--color-darkgray);
 
 	cursor: pointer;
 	transition: 300ms color;
@@ -68,4 +70,19 @@ main ul i.fa-square-github:hover {
 }
 main ul i.fa-square-twitter:hover {
 	color: #1DA1F2;
+}
+
+@media only screen and (min-width: 720px) {
+	main .container {justify-content: flex-end;}
+	main #home-filler {flex: 1;}
+	main::before {background-image: url("../assets/bg_md.jpg"); background-position: center right;}
+
+	@media only screen and (min-width: 950px) {
+		main::before {
+			width: 50%;
+			background-image: url("../assets/bg_lg.jpg");
+			background-position: center;
+		}
+		main #home-text {width: 45%;}
+	}
 }
